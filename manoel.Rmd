@@ -1,0 +1,181 @@
+---
+title: "R Básico"
+author: "Manoel Lucas Batista Vieira"
+date: "2023-11-22"
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+---
+# o que é R?
+É uma linguagem de programação multi-paradigma orientada a objetos, programação funcional, dinâmica, fracamente tipada, voltada à manipulação, análise e visualização de dados.
+
+
+![](https://e7.pngegg.com/pngimages/1012/958/png-clipart-rstudio-data-analysis-logo-datacamp-inc-editorial-board-blue-angle.png){width=20%}
+
+
+# O que é RStudio?
+
+O RStudio é um ambiente de desenvolvimento integrado (IDE) para a linguagem de programação R. Ele fornece uma interface gráfica amigável e diversas ferramentas que facilitam o desenvolvimento, a execução e a visualização de análises estatísticas e científicas feitas com R.
+
+![](https://play-lh.googleusercontent.com/IpkkmKM1HhCHJEB9-fqJZ9_xBtJyYLLbf75WtELjDdZxzAnJLASwKAzSeW1BNDNzDown){width=20%}
+
+# Por que devo aprende-lo?
+Aumenta as oportunidades, é gratuito, etc.
+
+# O que é um vetor?
+Vetores no R são apenas conjuntos indexados de valores. Para criá-los, basta colocar os valores separados por vírgulas dentro de um c() . Os objetos vetor1 e vetor2 são vetores. Uma maneira fácil de criar um vetor com uma sequência de números é utilizar o operador : 
+
+## Console
+No contexto do R Studio, o termo "console" refere-se à área interativa onde você pode digitar comandos diretamente e ver a saída imediata. O R Studio é uma interface de desenvolvimento integrada (IDE) para a linguagem de programação R, e o console desempenha um papel crucial na interação com o R.
+
+## Script
+O contexto do R Studio, um "script" refere-se a um arquivo que contém um conjunto de comandos em linguagem R. Esses comandos podem ser executados sequencialmente para realizar uma tarefa específica, como análise de dados, geração de gráficos, modelagem estatística, entre outros.
+
+A principal finalidade de um script é automatizar tarefas repetitivas, documentar o processo de análise de dados e permitir a reprodução dos resultados. Em vez de digitar comandos diretamente no console toda vez que você precisa realizar uma análise, você pode escrever esses comandos em um script e executá-los em lote.
+
+
+## Vetores
+Em R, um vetor é uma estrutura de dados fundamental que armazena elementos do mesmo tipo. Vetores podem ser unidimensionais, ou seja, possuem apenas uma dimensão (uma lista ordenada de elementos). No R Studio, um ambiente de desenvolvimento integrado (IDE) para a linguagem R, você frequentemente trabalhará com vetores ao realizar análises de dados.
+
+
+```{r}
+x <-c(1, 2, 3, 4, 5)
+x
+```
+
+## Matrizes
+
+Uma matriz em R é uma estrutura bidimensional que contém elementos do mesmo tipo organizados em linhas e colunas. Em R Studio, que é um ambiente de desenvolvimento integrado (IDE) para a linguagem R, você pode trabalhar com matrizes para armazenar e manipular dados de forma tabular.
+
+```{r}
+y <-1:12
+mat<-matrix(y,ncol=3)
+mat
+```
+
+
+## Array
+
+Em R, um array é uma estrutura de dados multidimensional que pode conter elementos do mesmo tipo. Ao contrário de matrizes, que são bidimensionais, arrays podem ter mais de duas dimensões. Em R Studio, que é um ambiente de desenvolvimento integrado (IDE) para a linguagem R, você pode trabalhar com arrays para lidar com dados multidimensionais.
+
+```{r}
+c<-array(1:12, c(2, 3, 2))
+c
+```
+
+## Data.frame
+
+Um data.frame é uma estrutura de dados tabular em R que é semelhante a uma tabela de banco de dados ou a uma planilha do Excel. No R Studio, um ambiente de desenvolvimento integrado (IDE) para a linguagem R, o data.frame é uma estrutura fundamental e muito utilizada para armazenar e manipular dados de forma organizada.
+
+```{r}
+frutas<- data.frame(
+  Nome = c("maçã", "banana", "pêra", "uva"),
+  cor = c("vermelha", "amarela", "verde", "roxa"),
+  sabor = c("doce", "doce", "doce", "doce"))
+frutas
+```
+  
+## Lista
+
+Em R Studio, uma "lista" refere-se a uma estrutura de dados que pode conter elementos de diferentes tipos e até mesmo outras listas. As listas são usadas para organizar dados de maneira flexível, permitindo armazenar uma coleção heterogênea de objetos.
+
+```{r}
+# Exemplos de lista
+ip <-list(
+  Pessoa1 = list(
+    Nome = "Alice",
+    Idade = 28,
+    Cidade = " São Paulo"),
+  Pessoa2 = list(
+    Nome = "Clarilene",
+    Idade = 50,
+    Cidade = " Monte Alegre"),
+  Pessoa3 = list(
+    Nome = "Diane",
+    Idade = 22,
+    Cidade = " Santarém"),
+  Pessoa4 = list(
+    Nome = " Gabriel",
+    Idade = 25,
+    Cidade = " Juruti"))
+ip
+```
+
+
+## O que é if e else?
+No R Studio, assim como em R em geral, if é uma estrutura de controle de fluxo que permite executar diferentes blocos de código com base em uma condição.
+
+O contexto do R Studio, assim como na linguagem de programação R, else é uma palavra-chave que faz parte da estrutura condicional if. A estrutura else é usada para especificar um bloco de código que deve ser executado quando a condição no if não é verdadeira.
+
+```{r}
+# Estrutura condicionais if e else
+g <- 8
+if (g > 7){
+  print(" o número é maior que 7.")
+} else{
+  print( " o número é menor ou igual a 7. ")
+}
+
+número <- -5
+
+if( número > 0){
+  print( " o número é positivo.")
+} else{
+  print( " o número é negativo ou zero.")
+}
+
+idades <-c(28, 30)
+nomes <-c("Joao", "Maria")
+df<- data.frame(nomes, idades)
+df
+
+if(df$idade[df$nomes == "Joao"] > df$idades[df$nomes == "Maria"]){
+  "mais velho: Joao"
+} else{
+  "mais velho: Maria"
+}
+```
+
+## Loops (for, while)
+
+## While
+
+A palavra-chave while é usada em R, incluindo no R Studio, para criar loops enquanto uma determinada condição for verdadeira. Em outras palavras, o bloco de código dentro do while é repetido continuamente enquanto a condição especificada for verdadeira.
+
+```{r}
+contador <- 5
+while (contador >= 1) {
+  cat(contador, "\n")
+  contador <- contador - 1
+}
+cat("Contagem regressiva concluída!")
+```
+
+
+
+## For
+
+No R, incluindo o R Studio, a estrutura de controle de fluxo é usada para criar loops que permitem que um bloco de código seja repetido um número específico de vezes.
+```{r}
+for(i in c(1, 2, 3, 4, 5)) {
+  print(i^2)
+}
+```
+
+# EXTRAS
+## Rmarkdown
+
+O R Markdown é uma ferramenta poderosa no R Studio que permite combinar código R, texto e elementos gráficos em um único documento. Isso possibilita a criação de documentos dinâmicos, nos quais você pode incorporar análises, visualizações e narrativas em um formato que pode ser facilmente compartilhado e reproduzido por outros.
+
+
+![Manoel](https://beatrizmilz.github.io/slidesR/img/rlogos/hex-rmarkdown.png){width=20%}
+
+
+
+
+install.packages("shiny")
+library(shiny)
+
+
+

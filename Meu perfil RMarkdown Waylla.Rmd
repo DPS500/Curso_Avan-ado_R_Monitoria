@@ -1,0 +1,19 @@
+---
+title: "Perfil Waylla"
+output:
+  flexdashboard::fleX_dashboard:
+  vertical_layout: scroll
+    
+---
+
+# Meu perfil
+
+# Currículo Lattes
+
+# Redes Sociais
+
+# Sobre
+
+
+
+

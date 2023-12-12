@@ -1,0 +1,103 @@
+---
+title: "Git e GitHub"
+author: "Waylla Andrade"
+date: "2023-12-06"
+output:
+  word_document: default
+  html_document: default
+---
+# O que é Git?
+O Git é um sistema de controle de versão distribuído (DVCS) projetado para rastrear mudanças em arquivos e coordenar o trabalho entre várias pessoas em projetos de desenvolvimento de software.
+O Git permite que os desenvolvedores trabalhem em suas próprias cópias locais de um repositório de código-fonte, fazendo alterações, revertendo para versões anteriores e mesclando as alterações de outros colaboradores. Cada desenvolvedor pode trabalhar independentemente em seu próprio ramo (branch), que é uma linha de desenvolvimento separada do projeto principal.
+
+
+O Git é conhecido por sua velocidade, eficiência e flexibilidade. Ele é amplamente utilizado na indústria de desenvolvimento de software e é suportado por várias plataformas de hospedagem de código, como GitHub, GitLab e Bitbucket.
+
+# O que é o GitHub?
+O GitHub é uma plataforma de hospedagem de código-fonte baseada em Git. Ela oferece serviços de controle de versão e colaboração para desenvolvedores, facilitando o trabalho em equipe e a gestão de projetos de software. O GitHub permite que os desenvolvedores armazenem, colaborem e controlem as versões de seu código-fonte, além de fornecer ferramentas para rastrear problemas, gerenciar projetos e facilitar a integração contínua.
+
+# Como configurar o Git no pc?
+1. Instalar o Git: Faça o download do Git no site oficial: Git - Downloads.
+Siga as instruções do instalador para configurar o Git no seu sistema.
+
+2. Configurar o nome de usuário e email:
+Abra um terminal ou prompt de comando.
+Digite os seguintes comandos, substituindo "Seu Nome" pelo seu nome e "seu@email.com" pelo seu endereço de e-mail:
+git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"
+
+3. Verificar as configurações:
+Você pode verificar se as configurações foram aplicadas corretamente usando o seguinte comando:
+git config --global --list
+
+4. Iniciar um repositório (opcional):
+Se você já tiver um projeto existente, vá para o diretório do projeto usando o terminal e execute o seguinte comando para iniciar um repositório Git:
+git init
+
+5. Clonar um repositório existente (opcional):
+Se você deseja trabalhar em um projeto existente, use o comando git clone seguido do URL do repositório:
+
+git clone https://github.com/nome-do-usuario/nome-do-repositorio.git
+
+# Conceitos Básicos:
+Repositório: É o local onde o Git armazena as informações sobre o histórico de versões e as alterações do projeto.
+
+Pull request: é uma solicitação que um desenvolvedor faz para incorporar suas mudanças ao código principal de um projeto. Ele permite que outros revisem as alterações antes de serem mescladas, garantindo qualidade e colaboração no desenvolvimento de software.
+
+Clone: Criar uma cópia local de um repositório remoto.
+git clone <URL do repositório>
+
+Branch: Um ramo é uma linha independente de desenvolvimento que permite que várias alterações ocorram simultaneamente sem interferir no trabalho de outras pessoas.
+
+git branch           
+Lista branches
+
+git branch <nome>    Cria um novo branch
+
+git branch -d <nome> Exclui um branch
+
+Commit: Um commit é uma alteração específica em um arquivo (ou vários arquivos) e representa uma nova versão do projeto.
+git commit -m "Mensagem do commit"
+
+Pull: Atualizar o repositório local com as alterações do repositório remoto.
+git pull
+
+Push: Enviar as alterações locais para um repositório remoto.
+git push
+
+Merge: O processo de combinar alterações de diferentes ramos para consolidar as modificações em uma única versão.
+git merge <nome do branch>
+
+Status: fornece informações sobre o estado atual do seu repositório. Ele mostra se há arquivos modificados, não rastreados ou se o branch local está à frente ou atrás do branch remoto. É uma ferramenta útil para entender o que está acontecendo no seu projeto antes de fazer um commit.
+git status
+
+Checkout: O comando git checkout é versátil e pode ser usado para várias operações relacionadas à navegação entre branches, criação de branches e manipulação de arquivos no Git.
+
+ Alternar para um Branch Existente:
+Para mudar para um branch existente, você utiliza o comando git checkout seguido do nome do branch desejado. Por exemplo:
+git checkout nome-do-branch
+
+Criar e Alternar para um Novo Branch:
+Se você quiser criar e mudar para um novo branch ao mesmo tempo, pode fazer assim:
+git checkout -b novo-branch
+
+Restaurar Arquivos para um Estado Anterior:
+O comando git checkout também pode ser usado para descartar mudanças em arquivos específicos, revertendo-os para um estado anterior. Por exemplo:
+git checkout nome-do-arquivo
+
+Alternar para um Commit ou Tag:
+
+Mover para um commit específico na história ou uma tag. Exemplo:
+git checkout hash-do-commit-ou-nome-da-tag
+
+
+
+
+
+
+
+
+
+
+
+

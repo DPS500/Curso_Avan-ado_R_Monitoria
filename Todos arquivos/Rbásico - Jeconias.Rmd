@@ -1,0 +1,105 @@
+---
+title: "Rbásico"
+author: "Jeconias Freitas"
+date: "2023-11-21"
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+---
+
+# O que é RStudio?
+Uma plataforma totalmente gratuita para que as pessoas programadoras possam utilizar a linguagem de programação R. O ambiente apresenta uma interface bastante simples e organizada que traz facilidade na hora de utilizar as ferramentas.
+# Por que devo aprende-lo?
+Aumenta as oportunidades: a linguagem R está dominando o mercado de trabalho e cada vez mais é importante saber a linguagem no meio corporativo. Nesse sentido, aprender R aumenta as suas oportunidades em carreiras como Data Science, pois dá aquele upgrade no seu currículo.
+# O que é um vetor?
+Um vetor é um objeto que possui magnitude e direção. Geometricamente, podemos imaginar um vetor como um segmento de linha direcionado, cujo comprimento é a magnitude do vetor e com uma seta indicando a direção. A direção do vetor é da cauda à cabeça.
+
+  ![](https://play-lh.googleusercontent.com/IpkkmKM1HhCHJEB9-fqJZ9_xBtJyYLLbf75WtELjDdZxzAnJLASwKAzSeW1BNDNzDown){width=10%}
+  
+  
+## Exemplo de vetor em R
+```{r}
+# Atribuindo valor a x.
+x <- c(1,2,3,4,5)
+x
+```
+## Matriz 
+Matrizes no R são objetos bidimensionais constituídos por linhas e colunas. Seus elementos assim como os vetores são apenas de um tipo, ou seja, matrizes no R podem ser constituídas unicamente por caracteres, números ou valores lógicos.
+```{r}
+# Exemplo de matriz
+y <- 1:12
+mat<-matrix(y,ncol=3)
+mat
+```
+## Array
+Na linguagem R, o array corresponde a uma coleção de matrizes, é uma coleção de matrizes agrupadas no plano vertical.
+
+```{r}
+# Exemplo de Array
+z <- array(1:12, c(2, 3, 2))
+z
+```
+## Data.frame
+Data frame é, provavelmente, o tipo de dado complexo mais utilizado em R. É nele que você armazena conjuntos de dados estruturados em linhas e colunas. Um data frame possui colunas nomeadas, sendo que todas as colunas possuem a mesma quantidade de linhas.
+
+```{r}
+# Exemplo Data.frame
+frutas <- data.frame(
+  
+  Nome = c("Maçã", "Banana", "Pêra", "Uva"), 
+  Cor = c("Vermelha", "Amarela", "Verde", "Rosa"), 
+  Sabor = c("Doce", "Doce", "Doce", "Doce"))
+frutas
+```
+
+## Listas
+Listas são objetos muito importantes dentro do R. Primeiro porque todo data frame é uma lista. Segundo porque elas são bem parecidas com vetores, mas com uma diferença essencial: você pode misturar diferentes classes de objetos dentro dela. 
+
+```{r}
+# Exemplo de Lista
+ip <- list(Pessoal = list(Nome = "Alice", Idade = 28, Cidade = "São Paulo"),
+           Pessoa2 = list(Nome = "Bob", Idade = 35, Cidade = "Rio de Janeiro"),
+           Pessoa3 = list(Nome = "Gabriel", Idade = 22, Cidade = "Belo Horizonte"),
+           Pessoa4 = list(Nome = "David", Idade = 30, Cidade = "Salvador")
+           )
+ip
+```
+## Condicionais (if, else)
+Para o R testar algo e fazer alguma coisa se a condição do teste for satisfeita, e, opcionalmente, fazer outra coisa se a condição do teste não for satisfeita. 
+
+```{r}
+g<- 8
+
+if (g > 10) {
+  print("O número é maior que 10.")
+} else {
+  print("O número é menor ou igual a 10.")
+}
+```
+## loops (for, while)
+A estrutura de repetição for permite criar loops para casos onde sabemos de antemão o número de repetições que devem ser realizadas.
+```{r}
+for(i in c(1, 2, 3, 4, 5)){
+  print(i^2)
+}
+```
+
+```{r}
+contador <- 5
+while (contador >=1){
+  cat(contador,"\n")
+  contador <- contador - 1
+}
+cat("contagem regressiva concluida")
+```
+
+# EXTRAS
+## RMarkdown
+R Markdown, ou simplesmente rmarkdown, é a ferramenta perfeita para transformar suas análises em documentos, relatórios, apresentações e até mesmo dashboards de alta qualidade e de maneira programática.
+
+![](https://privefl.github.io/R-presentation/rmarkdown.png){width=10%}
+
+
+
+

@@ -1,0 +1,47 @@
+---
+title: "Claudiane Silva"
+output:
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
+ 
+---
+
+# Meu perfil
+![](meuperfil.jpg){width=5%}  
+
+
+**Nome:** Claudiane Pereira  
+**Idade:** 18  
+**Sexo:** Femenino  
+**Nascionalidade:** Brasileira  
+**Endereço:** Tv: Manoel Cayres, 211, Pajuçara  
+**Email:** Claudianes2005@gmail.com  
+**Telefone:** (93) 991742045
+**Escolaridade:** Ensino Superior
+**Curso** Engenharia de Aquicultura
+
+Profissional comprometido, destaco-me pela comunicação eficaz, pensamento analítico e habilidade em trabalhar em equipe. Sou eficiente na gestão do tempo, garantindo resultados de alta qualidade. Além do ambiente profissional, minha paixão pela dança e leitura de livros de romance reflete meu compromisso com o crescimento holístico. Estou entusiasmado para contribuir ativamente em ambientes desafiadores e inovadores, alinhando minhas habilidades e paixões.  
+
+
+# Currículo Lattes
+Olá, sou Claudiane Pereira, uma entusiasta em formação na área acadêmica, atualmente cursando Engenharia de Aquicultura. Estou dedicando-me a aprimorar habilidades em Engenharia e Aquicultura, com destaque em trabalhar de forma colaborativa, evidenciando minha habilidade em equipes.
+Além do meu envolvimento acadêmico, tenho uma paixão por [Destaque Alguma Paixão Pessoal, como Dança ou Leitura], que complementa meu crescimento pessoal e criatividade. Estou aberta a oportunidades que possam expandir meus horizontes e contribuir para meu desenvolvimento acadêmico e profissional. Convido você a explorar mais sobre minha jornada neste espaço. Estou ansiosa para futuras colaborações e aprendizados.  
+
+
+Anteciosamente,  
+
+[Currículo Lattes](https://www.lattes.cnpq.br/)  
+
+# Rede social
+minhas redes sociais. 
+
+[fecebook](https://www.facebook.com/?locale=pt_BR)
+![](https://www.aberje.com.br/wp-content/uploads/2021/10/facebook-logo-3-1.png){width=4%}
+
+[Instagram](https://www.instagram.com/) ![](https://img.freepik.com/vetores-premium/icone-do-instagram-de-logotipo-de-distintivo-moderno_578229-124.jpg){width=5%}
+
+[Twitte](ttps://twitter.com/i/flow/login?input_flow_data=%7B"requested_variant"%3A"eyJsYW5nIjoicHQifQ%3D%3D"%7D)
+![](https://assets1.chainstoreage.com/styles/max_width_320/s3/2023-07/twitter-x-logo.png?itok=TGv7ti1u){width=4%}
+
+
+#
